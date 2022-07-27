@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_book"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    tools:context=".FragmentCardView"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/id_buku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/foto_buku"
+            android:text="1"
+
+            />
+
+        <ImageView
+            android:id="@+id/foto_buku"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/b"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/harga_buku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/foto_buku"
+            android:layout_marginLeft="48dp"
+            android:text="Rp. 2000"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nama_judul_buku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/foto_buku"
+            android:layout_toRightOf="@id/foto_buku"
+            android:text="Nama Buku"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/deskripsi_buku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_judul_buku"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/foto_buku"
+            android:layout_toRightOf="@id/foto_buku"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="Deskripsi Buku" />
+
+        <ImageView
+            android:id="@+id/imageButtonPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deskripsi_buku"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/foto_buku"
+            android:layout_toRightOf="@id/foto_buku"
+            android:src="@drawable/ic_add" />
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+
